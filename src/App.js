@@ -11,11 +11,13 @@ import Fabrication from "./pages/Fabrication/Fabrication";
 import Alimentation from "./pages/Alimentation/Alimentation";
 import Search from "./pages/Search/Search";
 import CardArtisan from "./pages/CardArtisan/CardArtisan";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>Bonjour</h1>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/page404" element={<NotFound />} />
@@ -26,8 +28,8 @@ function App() {
         <Route path="/alimentation" element={<Alimentation />} />
         <Route path="/recherche" element={<Search />} />
         <Route path="/ficheartisan:id" element={<CardArtisan />} />
-
       </Routes>
+      <Footer/>
     </div>
   );
 }

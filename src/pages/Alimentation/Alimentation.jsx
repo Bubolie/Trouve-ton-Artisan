@@ -1,7 +1,7 @@
 const Alimentation = () => {
   return (
-    <div>
-      
+    <div className="container">
+      <h1>Alimentation</h1>
     </div>
   )
 }
