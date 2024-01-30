@@ -10,9 +10,12 @@ import Services from "./pages/Services/Services";
 import Fabrication from "./pages/Fabrication/Fabrication";
 import Alimentation from "./pages/Alimentation/Alimentation";
 import Search from "./pages/Search/Search";
-import CardArtisan from "./pages/CardArtisan/CardArtisan";
+// import CardArtisan from "./pages/CardArtisan/CardArtisan";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Donnees from "./pages/Données_Perso/Donnees";
+import Cookies from "./pages/Cookies/Cookies";
+import Accessibilite from "./pages/Accessibilité/Accessibilité";
 
 function App() {
   return (
@@ -20,14 +23,17 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/page404" element={<NotFound />} />
-        <Route path="/legal" element={<Legal />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/batiment" element={<Batiment />} />
         <Route path="/services" element={<Services />} />
         <Route path="/fabrication" element={<Fabrication />} />
         <Route path="/alimentation" element={<Alimentation />} />
         <Route path="/recherche" element={<Search />} />
-        <Route path="/ficheartisan:id" element={<CardArtisan />} />
+        <Route path="//mentions-legales" element={< Legal/>} />
+        <Route path="/donnees-personnelles" element={< Donnees/>} />
+        <Route path="/cookies" element={< Cookies/>} />
+        <Route path="/accessibilite" element={< Accessibilite/>} />
+
       </Routes>
       <Footer/>
     </div>
