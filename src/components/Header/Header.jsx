@@ -22,8 +22,8 @@ const Header = () => {
   //   };
   // console.log(handleSearchChange);
   return (
-    <header className="container-fluid">
-      <div className="container">
+    <header>
+      <div className="container body-wrapper">
         <nav className="navbar navbar-expand-lg d-flex justify-content-between">
           <div className="ms-2">
             <NavLink className="navbar-brand active" to="/">
