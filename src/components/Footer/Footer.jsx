@@ -10,7 +10,7 @@ const Footer = () => {
         <section className="container col-md-6 d-flex flex-column align-items-center mb-4">
           <h2 className="text-center">Pages Legale</h2>
           <ul className="m-3">
-            <li className="link-footer">
+            <li >
               <NavLink
                 to="/mentions-legales"
                 rel="noopener noreferrer"
@@ -20,7 +20,7 @@ const Footer = () => {
               </NavLink>
             </li>
 
-            <li className="link-footer">
+            <li >
               <NavLink
                 to="/donnees-personnelles"
                 rel="noopener noreferrer"
@@ -29,7 +29,7 @@ const Footer = () => {
                 Données personnelles
               </NavLink>
             </li>
-            <li className="link-footer">
+            <li >
               <NavLink
                 to="/cookies"
                 rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const Footer = () => {
                 Cookies
               </NavLink>
             </li>
-            <li className="link-footer">
+            <li >
               <NavLink
                 to="/accessibilite"
                 rel="noopener noreferrer"
