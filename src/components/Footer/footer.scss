@@ -1,20 +1,22 @@
+@import '../../assets/style.scss/colors.scss';
+
 footer {
-  background-color: #384050;
-  color: #f1f8fc;
+  background-color: $dark-color;
+  color: $light-color;
   font-size: 12px;
 
-  h2 {
+  h4 {
     font-size: 16px;
-    color: #82B864;
+    color: $success-color;
     font-weight: bold;
   }
   
   .link-footer {
     text-decoration: none;
-    color: #f1f8fc;
+    color: $light-color;
 
     &:hover {
-      color: #82b864;
+      color: $success-color;
       text-decoration: underline;
     }
   }

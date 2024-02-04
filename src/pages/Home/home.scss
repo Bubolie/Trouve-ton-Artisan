@@ -1,0 +1,18 @@
+@import '../../assets/style.scss/colors.scss';
+
+
+.bg-color-secondary {
+  background-color: $secondary-color;
+  color: $light-color;
+  margin: none; 
+
+}
+
+  h2 {
+  color: $dark-color;
+  background-color: $success-color;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 0.5em 2em;
+}
+
