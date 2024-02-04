@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="container-fluid py-5">
       <div className="row body-wrapper">
         <section className="container col-md-6 d-flex flex-column align-items-center mb-4">
-          <h2 className="text-center">Pages Legale</h2>
+          <h4 className="text-center">Pages Legale</h4>
           <ul className="m-3">
             <li >
               <NavLink
@@ -51,7 +51,7 @@ const Footer = () => {
         </section>
         <section className="col-md-6 d-flex flex-column align-items-center">
           <address>
-            <h2 className="text-center">Nous contacter</h2>
+            <h4 className="text-center">Nous contacter</h4>
             <div className="m-4">
               <a href="tel:+33(0)426734000" className="link-footer d-flex">
                 <img

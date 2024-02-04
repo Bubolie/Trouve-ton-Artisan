@@ -1,7 +1,9 @@
+@import '../../assets/style.scss/colors.scss';
+
 .bg-search {
-  background-color: #f1f8fc;
+  background-color: $light-color;
 }
 
 .header-border {
-  border-bottom: 3px solid #00497c;
+  border-bottom: 3px solid $secondary-color;
 }
