@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./main.scss";
+import "../src/assets/style.scss/main.scss";
 
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";

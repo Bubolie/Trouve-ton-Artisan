@@ -1,0 +1,20 @@
+@import '../../assets/style.scss/colors.scss';
+
+.card {
+  border-radius: 15px;
+  border: 2px solid $success-color;
+  background-color: $primary-color;
+
+  .card-body {
+    background-color: $light-color;
+    border-radius: 5px;
+
+    .card-title {
+      color: $error-color;
+      font-weight: bold;
+    }
+    
+  }
+
+
+}

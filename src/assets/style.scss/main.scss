@@ -1,27 +1,29 @@
 @font-face {
   font-family: Graphik;
-  src: url('./assets/font/Graphik-Regular-Trial.otf') format('opentype');
+  src: url('../font/Graphik-Regular-Trial.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Graphik;
-  src: url('./assets/font/Graphik-Bold-Trial.otf') format('opentype');
+  src: url('../font/Graphik-Bold-Trial.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: Graphik;
-  src: url('./assets/font/Graphik-RegularItalic-Trial.otf') format('opentype');
+  src: url('../font/Graphik-RegularItalic-Trial.otf') format('opentype');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: Graphik;
-  src: url('./assets/font/Graphik-BoldItalic-Trial.otf') format('opentype');
+  src: url('../font/Graphik-BoldItalic-Trial.otf') format('opentype');
   font-weight: bold;
   font-style: italic;
 }
+
+@import 'colors';
 
 html {
   box-sizing: border-box;
@@ -35,8 +37,8 @@ html {
 
 body {
   font-family: 'Graphik', sans-serif;
-  background-color: #f1f8fc;
-  color: #384050;
+  background-color: $light-color;
+  color: $dark-color;
 }
 
 ol, ul {
@@ -53,4 +55,11 @@ img {
       margin: 0 120px;
 
   }
+}
+
+.logo {
+  height: 24px;
+  width: 24px;
+  background-color: #82B864;
+  margin-right: 10px;
 }
