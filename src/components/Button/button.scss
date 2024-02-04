@@ -1,12 +1,14 @@
+@import '../../assets/style.scss/colors.scss';
+
 .style-button {
   background-color: #cd2c2e;
-  color: #f1f8fc;
-  border-radius: 15px;
+  color: $light-color;
+  border-radius: 20px;
   padding: 5px 30px;
 
   &:hover {
-    background-color: #82b864;
-    color : #384050;
+    background-color: $success-color;
+    color : $dark-color;
   }
 
 }
