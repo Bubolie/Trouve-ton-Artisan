@@ -9,9 +9,10 @@
 }
 
   h2 {
-  color: $dark-color;
+  color: $secondary-color;
   background-color: $success-color;
   font-weight: bold;
+  border: 4px solid $secondary-color;
   border-radius: 15px;
   padding: 0.5em 2em;
 }

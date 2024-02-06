@@ -13,7 +13,7 @@ const HeaderNavBar = (props) => {
     <li className="nav-item">
       <NavLink
         to={`/${removeAccentsAndLowerCase(props.category)}`}
-        className="nav-link "
+        className="nav-link"
         aria-current="page"
         aria-expanded="false"
         onClick={props.onClick}

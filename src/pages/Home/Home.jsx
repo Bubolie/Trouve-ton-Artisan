@@ -7,6 +7,8 @@ import dataJson from "../../data/datas.json";
 const Home = () => {
   const topArtisans = dataJson.filter((dataJson) => dataJson.top);
 
+  const sortTopArtisans = topArtisans.sort((a,b) => b.note-a.note);
+
   return (
     <main>
       <section className="bg-color-secondary py-5">
@@ -24,12 +26,12 @@ const Home = () => {
           <Stage number="4" description="Une réponse sera apportée sous 48h." />
         </div>
       </section>
-      <section className="my-5 row">
+      <section className="container my-5 ">
         <div className="d-flex justify-content-center">
           <h2>Nos artisans du mois</h2>
         </div>
-        <div className="col-md-4">
-          {topArtisans.map((artisan) => (
+        <div className="row">
+          {sortTopArtisans.map((artisan) => (
             <Card
               key={artisan.id}
               nameEntreprise={artisan.name}

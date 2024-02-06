@@ -22,11 +22,10 @@ const Header = () => {
   //   };
   // console.log(handleSearchChange);
   return (
-    <header>
-      <div className="container body-wrapper">
+    <header className="container">
         <nav className="navbar navbar-expand-lg d-flex justify-content-between">
           <div className="ms-2">
-            <NavLink className="navbar-brand active" to="/">
+            <NavLink className="navbar-brand" to="/">
               <img
                 src={logo}
                 alt='Logo "Trouve ton Artisan"'
@@ -57,7 +56,7 @@ const Header = () => {
                 }`}
                 id="navbarToggler"
               >
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul className="nav navbar-nav me-auto mb-2 mb-lg-0">
                   <HeaderNavBar category="Bâtiment" onClick={handleNavLink} />
                   <HeaderNavBar category="Services" onClick={handleNavLink} />
                   <HeaderNavBar
@@ -101,7 +100,6 @@ const Header = () => {
             </form>
           </section>
         </nav>
-      </div>
       <div className="header-border"></div>
     </header>
   );

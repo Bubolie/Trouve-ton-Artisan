@@ -1,9 +1,28 @@
 @import '../../assets/style.scss/colors.scss';
 
+
+ .nav-link {
+  &.active {
+    font-weight: bold;
+    background-color: $secondary-color;
+    color: $light-color !important;
+    border-radius: 15px;
+    text-align: center;
+
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+
+  }
+
 .bg-search {
   background-color: $light-color;
 }
 
-.header-border {
-  border-bottom: 3px solid $secondary-color;
-}
+// .header-border {
+//   border-bottom: 3px solid $secondary-color;
+//   margin: none;
+//   padding: none;
+// }
+
