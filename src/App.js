@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./main.scss";
@@ -12,16 +11,14 @@ import Fabrication from "./pages/Fabrication/Fabrication";
 import Alimentation from "./pages/Alimentation/Alimentation";
 import Search from "./pages/Search/Search";
 import CardArtisan from "./pages/CardArtisan/CardArtisan";
-=======
-import logo from './assets/image/Logo.png';
-import './App.css';
->>>>>>> 92680be094a7dccab1d10eecd136fd4c61585ebd
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-      <h1>Bonjour</h1>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/page404" element={<NotFound />} />
@@ -32,24 +29,9 @@ function App() {
         <Route path="/alimentation" element={<Alimentation />} />
         <Route path="/recherche" element={<Search />} />
         <Route path="/ficheartisan:id" element={<CardArtisan />} />
-
       </Routes>
-=======
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
->>>>>>> 92680be094a7dccab1d10eecd136fd4c61585ebd
+      <Footer/>
+
     </div>
   );
 }
