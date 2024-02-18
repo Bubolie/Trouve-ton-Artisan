@@ -1,20 +1,22 @@
-@import '../../assets/style.scss/colors.scss';
+@import "../../assets/style.scss/colors.scss";
 
-
- .nav-link {
+.nav-link {
   &.active {
     font-weight: bold;
     background-color: $secondary-color;
     color: $light-color !important;
     border-radius: 15px;
     text-align: center;
-
   }
   &:hover {
     text-decoration: underline;
   }
+}
 
-  }
+img {
+  width: 24px;
+  height: auto;
+}
 
 .bg-search {
   background-color: $light-color;
@@ -25,4 +27,3 @@
 //   margin: none;
 //   padding: none;
 // }
-

@@ -1,4 +1,4 @@
-@import '../../assets/style.scss/colors.scss';
+@import "../../assets/style.scss/colors.scss";
 
 footer {
   background-color: $dark-color;
@@ -9,8 +9,12 @@ footer {
     font-size: 16px;
     color: $success-color;
     font-weight: bold;
+    border: 1px solid $light-color;
+    border-radius: 5px ;
+    background-color: black;
+    padding: 4px 10px;
   }
-  
+
   .link-footer {
     text-decoration: none;
     color: $light-color;
@@ -21,5 +25,3 @@ footer {
     }
   }
 }
-
-
