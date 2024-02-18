@@ -10,19 +10,20 @@ import Services from "./pages/Services/Services";
 import Fabrication from "./pages/Fabrication/Fabrication";
 import Alimentation from "./pages/Alimentation/Alimentation";
 import Search from "./pages/Search/Search";
-// import CardArtisan from "./pages/CardArtisan/CardArtisan";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Donnees from "./pages/Données_Perso/Donnees";
 import Cookies from "./pages/Cookies/Cookies";
 import Accessibilite from "./pages/Accessibilité/Accessibilité";
-import Separator from "./components/Separator/Separator";
+// import Separator from "./components/Separator/Separator";
+import EntrepriseDetails from "./pages/Details/EntrepriseDetails";
+
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Separator/>
+      {/* <Separator/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
@@ -35,7 +36,7 @@ function App() {
         <Route path="/donnees-personnelles" element={< Donnees/>} />
         <Route path="/cookies" element={< Cookies/>} />
         <Route path="/accessibilite" element={< Accessibilite/>} />
-
+        <Route path="/entreprise/:artisanName" element={< EntrepriseDetails />} />
       </Routes>
       <Footer/>
     </div>
