@@ -7,13 +7,19 @@ import dataJson from "../../data/datas.json";
 const Home = () => {
   const topArtisans = dataJson.filter((dataJson) => dataJson.top);
 
-  const sortTopArtisans = topArtisans.sort((a,b) => b.note-a.note);
+  const sortTopArtisans = topArtisans.sort((a, b) => b.note - a.note);
+
+  // const moreDetails = (id) => {
+  //   console.log("afficher plus de détails", id);
+
+  // }
 
   return (
     <main>
       <section className="bg-color-secondary py-5">
-        <div className="container body-wrapper">
-          <h1 className="text-center mb-5">Comment trouver mon artisan ?</h1>
+        <h1 className="text-center mb-5">Comment trouver mon artisan ?</h1>
+        <div className="container">
+          <div className="d-flex flex-column justify-content-center align-items-center">
           <Stage
             number="1"
             description="Choisir la catégorie d'artisanat dans le menu."
@@ -25,19 +31,21 @@ const Home = () => {
           />
           <Stage number="4" description="Une réponse sera apportée sous 48h." />
         </div>
+        </div>
+        
       </section>
       <section className="container my-5 ">
         <div className="d-flex justify-content-center">
           <h2>Nos artisans du mois</h2>
         </div>
         <div className="row">
-          {sortTopArtisans.map((artisan) => (
+          {sortTopArtisans.map((entreprise) => (
             <Card
-              key={artisan.id}
-              nameEntreprise={artisan.name}
-              note={artisan.note}
-              category={artisan.specialty}
-              location={artisan.location}
+              key={entreprise.id}
+              nameEntreprise={entreprise.name}
+              note={entreprise.note}
+              category={entreprise.specialty}
+              location={entreprise.location}
             />
           ))}
         </div>

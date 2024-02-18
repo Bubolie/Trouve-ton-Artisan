@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const HeaderNavBar = (props) => {
+const LinkNavBar = (props) => {
   function removeAccentsAndLowerCase(str) {
     return str
       .normalize("NFD")
@@ -24,4 +24,4 @@ const HeaderNavBar = (props) => {
   );
 };
 
-export default HeaderNavBar;
+export default LinkNavBar;
