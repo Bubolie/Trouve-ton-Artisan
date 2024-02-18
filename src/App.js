@@ -14,6 +14,7 @@ import CardArtisan from "./pages/CardArtisan/CardArtisan";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,7 @@ function App() {
         <Route path="/ficheartisan:id" element={<CardArtisan />} />
       </Routes>
       <Footer/>
+
     </div>
   );
 }
