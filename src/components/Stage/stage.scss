@@ -1,0 +1,13 @@
+@import '../../assets/style.scss/colors.scss';
+
+.bg-stage {
+  color: $success-color;
+  font-weight: bold;
+  border: 1px solid $light-color;
+  border-radius: 5px ;
+  background-color: black;
+  padding: 4px 10px;
+}
+
+
+

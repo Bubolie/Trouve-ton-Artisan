@@ -1,18 +1,22 @@
 import React from "react";
-import "./button.scss"
-import { NavLink } from "react-router-dom";
+import "./button.scss";
+import { useNavigate } from "react-router-dom";
 
 const Button = (props) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(props.linkPage);
+  };
+
   return (
-    <div >
-      <NavLink to={props.linkPage}>
-        <button className="style-button" type={props.type} onClick={props.onClick}>
+    <div>
+      <button className="style-button" type={props.type} onClick={handleClick}>
         {props.buttonName}
       </button>
-      </NavLink>
-      
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
+

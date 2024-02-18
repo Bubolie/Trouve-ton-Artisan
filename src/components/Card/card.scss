@@ -1,0 +1,22 @@
+@import "../../assets/style.scss/colors.scss";
+
+.card {
+  border-radius: 15px;
+  border: 2px solid $success-color;
+  background-color: $primary-color;
+
+  .card-body {
+    background-color: $light-color;
+    border-radius: 5px;
+
+    .card-title {
+      color: $secondary-color;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .star-size {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

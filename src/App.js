@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./main.scss";
+import "../src/assets/style.scss/main.scss";
+import "../src/assets/style.scss/main.scss";
 
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
@@ -16,12 +17,14 @@ import Footer from "./components/Footer/Footer";
 import Donnees from "./pages/Données_Perso/Donnees";
 import Cookies from "./pages/Cookies/Cookies";
 import Accessibilite from "./pages/Accessibilité/Accessibilité";
+import Separator from "./components/Separator/Separator";
 
 
 function App() {
   return (
     <div className="App">
       <Header/>
+      <Separator/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
