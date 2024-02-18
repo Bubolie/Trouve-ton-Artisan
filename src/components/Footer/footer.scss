@@ -1,0 +1,29 @@
+footer {
+  background-color: #384050;
+  color: #f1f8fc;
+  font-size: 12px;
+
+  h2 {
+    font-size: 16px;
+    color: #82B864;
+    font-weight: bold;
+  }
+  
+  .link-footer {
+    text-decoration: none;
+    color: #f1f8fc;
+
+    &:hover {
+      color: #82b864;
+      text-decoration: underline;
+    }
+  }
+}
+
+.logo {
+  height: 24px;
+  width: 24px;
+  background-color: #82B864;
+  margin-right: 10px;
+}
+

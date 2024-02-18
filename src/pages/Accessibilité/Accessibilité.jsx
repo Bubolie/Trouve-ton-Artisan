@@ -1,12 +1,11 @@
 import React from "react";
 
-const Alimentation = () => {
+const Accessibilite = () => {
   return (
     <div className="container">
-      <h1>Alimentation</h1>
-
+      <h1>Accessibilité</h1>
     </div>
   )
 }
 
-export default Alimentation
+export default Accessibilite
