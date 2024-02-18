@@ -11,6 +11,7 @@ const Footer = () => {
           <h4 className="text-center">Pages Légales</h4>
           <ul className="m-3">
             <li>
+
               <NavLink
                 to="/mentions-legales"
                 rel="noopener noreferrer"
@@ -21,6 +22,7 @@ const Footer = () => {
             </li>
 
             <li>
+
               <NavLink
                 to="/donnees-personnelles"
                 rel="noopener noreferrer"
@@ -29,7 +31,7 @@ const Footer = () => {
                 Données personnelles
               </NavLink>
             </li>
-            <li>
+            <li >
               <NavLink
                 to="/cookies"
                 rel="noopener noreferrer"
@@ -39,6 +41,7 @@ const Footer = () => {
               </NavLink>
             </li>
             <li>
+
               <NavLink
                 to="/accessibilite"
                 rel="noopener noreferrer"
