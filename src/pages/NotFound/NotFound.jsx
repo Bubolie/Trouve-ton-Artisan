@@ -15,6 +15,7 @@ const NotFound = () => {
         type="button"
         buttonName="Retourner à la page d'accueil"
       />
+
     </div>
   );
 };

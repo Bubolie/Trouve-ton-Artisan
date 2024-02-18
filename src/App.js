@@ -17,6 +17,7 @@ import Donnees from "./pages/Données_Perso/Donnees";
 import Cookies from "./pages/Cookies/Cookies";
 import Accessibilite from "./pages/Accessibilité/Accessibilité";
 
+
 function App() {
   return (
     <div className="App">
@@ -36,6 +37,7 @@ function App() {
 
       </Routes>
       <Footer/>
+
     </div>
   );
 }
