@@ -16,8 +16,8 @@ const Card = (props) => {
   //   : "";
 
   return (
-    <div className=" col-md-4 my-3">
-      <div className="card shadow h-100">
+    <div className=" col-md-6 col-lg-4 my-3 mx-auto">
+      <div className="card shadow h-100 ">
         <div className="m-4 card-body shadow">
           <h3 className="card-title text-center ">{props.nameEntreprise}</h3>
           <div className="card-text">

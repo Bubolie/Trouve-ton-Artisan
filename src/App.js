@@ -17,6 +17,7 @@ import Cookies from "./pages/Cookies/Cookies";
 import Accessibilite from "./pages/Accessibilité/Accessibilité";
 // import Separator from "./components/Separator/Separator";
 import EntrepriseDetails from "./pages/Details/EntrepriseDetails";
+import FilterResults from "./components/FilterResults/FilterResults";
 
 
 function App() {
@@ -31,12 +32,13 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/fabrication" element={<Fabrication />} />
         <Route path="/alimentation" element={<Alimentation />} />
-        <Route path="/recherche" element={<Search />} />
+        <Route path="/résultats-de-recherche" element={<Search />} />
         <Route path="//mentions-legales" element={< Legal/>} />
         <Route path="/donnees-personnelles" element={< Donnees/>} />
         <Route path="/cookies" element={< Cookies/>} />
         <Route path="/accessibilite" element={< Accessibilite/>} />
         <Route path="/entreprise/:artisanName" element={< EntrepriseDetails />} />
+        <Route path="/:filterTermSearch" element= {<FilterResults/>}/>
       </Routes>
       <Footer/>
     </div>

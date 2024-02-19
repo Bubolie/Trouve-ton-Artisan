@@ -4,30 +4,15 @@ import { useParams } from "react-router-dom";
 import iconStar from "../../assets/images/star-512.svg";
 import iconLocation from "../../assets/images/location.svg";
 import iconCategory from "../../assets/images/categories.svg";
-import Button from "../../components/Button/Button";
 import data from "../../data/datas.json";
 
 import "./entrepriseDetails.scss";
+import FormContactArtisan from "./FormContactArtisan";
 
 const EntrepriseDetails = () => {
   const { artisanName } = useParams();
 
   const entreprise = data.find((entreprise) => entreprise.name === artisanName);
-
-  // Pour forcer l'envoie par amil du formulaire
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-    const name = formData.get("name");
-    const body = `${formData.get("message")}\n\nNom: ${name}`;
-    const mailtoURL = `mailto:${entreprise.email}?subject=${formData.get(
-      "objet"
-    )}&body=${encodeURIComponent(body)}`;
-
-    window.open(mailtoURL);
-    form.reset();
-  };
 
   return (
     <section className="container my-5">
@@ -66,37 +51,9 @@ const EntrepriseDetails = () => {
           <h3 className="mt-5 mb-3 ">A propos</h3>
           <p>{entreprise.about}</p>
           <h3 className="mt-5 mb-4 ">Nous contacter</h3>
-          <form action="" method="post" onSubmit={handleSubmit}>
-            <div className="row m-3">
-              <input
-                className="px-2 my-2 rounded-4 form-text-color col-lg-6"
-                type="text"
-                name="name"
-                placeholder="Nom"
-                autoComplete="name"
-                required
-              />
-              <input
-                className="px-2 my-2 rounded-4 form-text-color col-lg-6"
-                type="text"
-                name="objet"
-                placeholder="Objet"
-                required
-              />
 
-              <textarea
-                className="px-2 my-2 rounded-4 form-text-color"
-                name="message"
-                id="message"
-                rows="10"
-                placeholder="Votre message..."
-                required
-              ></textarea>
-            </div>
-            <div className="text-end my-3">
-              <Button type="submit" buttonName="Envoyer" />
-            </div>
-          </form>
+          <FormContactArtisan email={entreprise.email} />
+
           <p>
             Notre site web :{" "}
             {entreprise.website ? (
