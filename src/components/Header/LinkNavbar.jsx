@@ -12,7 +12,7 @@ const LinkNavBar = (props) => {
   return (
     <li className="nav-item">
       <NavLink
-        to={`/${removeAccentsAndLowerCase(props.category)}`}
+        to={`categorie/${removeAccentsAndLowerCase(props.category)}`}
         className="nav-link"
         aria-current="page"
         aria-expanded="false"

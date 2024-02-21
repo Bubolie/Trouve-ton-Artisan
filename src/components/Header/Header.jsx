@@ -4,9 +4,17 @@ import logo from "../../assets/images/logo.svg";
 import imageLoupe from "../../assets/images/loupe.svg";
 import "./header.scss";
 import LinkNavBar from "./LinkNavbar";
+import data from "../../data/datas.json";
+
 
 const Header = () => {
-  const categories = ["Bâtiment", "Services", "Fabrication", "Alimentation"];
+  
+  const categoriesSet = new Set();
+  data.forEach((item) => {
+    categoriesSet.add(item.category);
+  });
+  const categories = Array.from(categoriesSet);
+
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
@@ -19,12 +27,14 @@ const Header = () => {
   };
 
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
+    let value = e.target.value
+    setSearchTerm(value);
+    
   };
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    navigate(`/${searchTerm}`);
+    navigate(`resultats-de-recherche/${searchTerm}`);
     setSearchTerm("")
   };
 
@@ -87,7 +97,7 @@ const Header = () => {
             >
               <img
                 src={imageLoupe}
-                className="logo-loupe"
+                className="logo"
                 alt="logo d'une loupe"
                 width="512"
                 height="512"
@@ -104,11 +114,12 @@ const Header = () => {
                   value={searchTerm}
                   aria-label="Search"
                   onChange={handleSearchChange}
+                  required
                 />
                 <button className="btn" type="submit">
                   <img
                     src={imageLoupe}
-                    className="logo-loupe"
+                    className="logo-mini"
                     alt="logo d'une loupe"
                     width="512"
                     height="512"

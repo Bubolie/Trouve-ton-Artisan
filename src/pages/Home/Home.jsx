@@ -41,7 +41,7 @@ const Home = () => {
               key={entreprise.id}
               nameEntreprise={entreprise.name}
               note={entreprise.note}
-              category={entreprise.specialty}
+              specialty={entreprise.specialty}
               location={entreprise.location}
             />
           ))}

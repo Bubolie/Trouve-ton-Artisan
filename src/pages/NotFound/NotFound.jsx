@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <div className="container body-wrapper my-5">
       <h1>Erreur 404</h1>
-      <div className="container-fluid text-center">
+      <div className="text-center">
         <img src={img404} alt='logo ordinateur affichant "404"' width="512" height="512"/>
       </div>
       <p>Page non trouvée...</p>

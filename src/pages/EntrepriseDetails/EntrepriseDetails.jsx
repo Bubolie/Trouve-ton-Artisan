@@ -25,6 +25,7 @@ const EntrepriseDetails = () => {
               alt="Etoile jaune à 5 branche"
               width="512"
               height="512"
+              className="logo"
             />
             <p className="m-3">{entreprise.note}/5</p>
           </div>
@@ -32,17 +33,17 @@ const EntrepriseDetails = () => {
             <img
               src={iconCategory}
               alt="Symbole de catégorie : quatre éléments distincts"
-              className="logo img-thumbnail"
+              className="logo logo-custom img-thumbnail"
               width="512"
               height="512"
             />
-            <p className="m-2">{entreprise.category}</p>
+            <p className="m-2">{entreprise.specialty}</p>
           </div>
           <div className="d-flex align-items-center">
             <img
               src={iconLocation}
               alt="Symbole de localisation : point sur une carte"
-              className="logo img-thumbnail"
+              className="logo logo-custom img-thumbnail"
               width="512"
               height="512"
             />
