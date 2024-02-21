@@ -11,7 +11,7 @@ const Button = (props) => {
 
   return (
     <div>
-      <button className="style-button" type={props.type} onClick={handleClick}>
+      <button className={`button button-${props.color}`} type={props.type} onClick={handleClick}>
         {props.buttonName}
       </button>
     </div>

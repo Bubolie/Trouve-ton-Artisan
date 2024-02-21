@@ -1,13 +1,23 @@
 @import "../../assets/style.scss/colors.scss";
 
-.style-button {
-  background-color: #cd2c2e;
-  color: $light-color;
+.button {
   border-radius: 20px;
   padding: 5px 30px;
 
-  &:hover {
-    background-color: $success-color;
-    color: $dark-color;
+  &-red {
+    background-color: $error-color;
+    color: $light-color;
+    &:hover {
+      background-color: $success-color;
+      color: $dark-color;
+    }
+  }
+  &-blue {
+    background-color: $primary-color;
+    color: $light-color;
+    &:hover {
+      background-color: $secondary-color;
+      color: $light-color;
+    }
   }
 }
