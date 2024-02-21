@@ -57,7 +57,7 @@ const Footer = () => {
                 <img
                   src={phone}
                   alt="icone d'un téléphone"
-                  className="logo img-thumbnail"
+                  className="logo-mini logo-custom img-thumbnail"
                   width="512"
                   height="512"
                 />
@@ -73,7 +73,7 @@ const Footer = () => {
                 <img
                   src={location}
                   alt="icone de localisation"
-                  className="logo img-thumbnail"
+                  className="logo-mini logo-custom img-thumbnail"
                   width="512"
                   height="512"
                 />

@@ -1,29 +1,29 @@
 @font-face {
   font-family: Graphik;
-  src: url('../font/Graphik-Regular-Trial.otf') format('opentype');
+  src: url("../font/Graphik-Regular-Trial.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Graphik;
-  src: url('../font/Graphik-Bold-Trial.otf') format('opentype');
+  src: url("../font/Graphik-Bold-Trial.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: Graphik;
-  src: url('../font/Graphik-RegularItalic-Trial.otf') format('opentype');
+  src: url("../font/Graphik-RegularItalic-Trial.otf") format("opentype");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: Graphik;
-  src: url('../font/Graphik-BoldItalic-Trial.otf') format('opentype');
+  src: url("../font/Graphik-BoldItalic-Trial.otf") format("opentype");
   font-weight: bold;
   font-style: italic;
 }
 
-@import 'colors';
+@import "colors";
 
 html {
   box-sizing: border-box;
@@ -31,17 +31,20 @@ html {
   margin: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  font-family: 'Graphik', sans-serif;
+  font-family: "Graphik", sans-serif;
   background-color: $light-color;
   color: $dark-color;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -50,10 +53,21 @@ img {
   height: auto;
 }
 
-
 .logo {
-  height: 24px;
-  width: 24px;
-  background-color: #82B864;
-  margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    &-mini {
+      width: 24px;
+      height: 24px;
+    }
+  &-custom {
+    background-color: #82b864;
+    margin-right: 10px;
+  }
+}
+
+.title-style {
+  border-radius: 15px;
+  background-color: $success-color;
+  font-weight: bold;
 }

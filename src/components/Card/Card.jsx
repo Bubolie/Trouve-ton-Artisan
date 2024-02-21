@@ -17,14 +17,14 @@ const Card = (props) => {
 
   return (
     <div className=" col-md-6 col-lg-4 my-3 mx-auto">
-      <div className="card shadow h-100 ">
+      <article className="card shadow h-100 ">
         <div className="m-4 card-body shadow">
           <h3 className="card-title text-center ">{props.nameEntreprise}</h3>
           <div className="card-text">
             <div className="d-flex align-items-center justify-content-center">
               <img
                 src={iconStar}
-                className="star-size"
+                className="logo"
                 alt="Etoile jaune à 5 branches"
                 width="512"
                 height="512"
@@ -35,17 +35,17 @@ const Card = (props) => {
               <img
                 src={iconCategory}
                 alt="Symbole de catégorie : quatre éléments distincts"
-                className="logo img-thumbnail"
+                className="logo logo-custom img-thumbnail"
                 width="512"
                 height="512"
               />
-              <p className="m-2">{props.category}</p>
+              <p className="m-2">{props.specialty}</p>
             </div>
             <div className="d-flex align-items-center">
               <img
                 src={iconLocation}
                 alt="Symbole de localisation : point sur une carte"
-                className="logo img-thumbnail"
+                className="logo logo-custom img-thumbnail"
                 width="512"
                 height="512"
               />
@@ -58,9 +58,10 @@ const Card = (props) => {
             linkPage={`/entreprise/${props.nameEntreprise}`}
             type="link"
             buttonName="En savoir plus"
+            color="red"
           />
         </div>
-      </div>
+      </article>
     </div>
   );
 };
