@@ -15,7 +15,7 @@ const EntrepriseDetails = () => {
   const entreprise = data.find((entreprise) => entreprise.name === artisanName);
 
   return (
-    <section className="container my-5">
+    <main className="container my-5">
       {entreprise && (
         <div className="container bg-container">
           <h2 className="text-center mt-4">{entreprise.name} </h2>
@@ -67,7 +67,7 @@ const EntrepriseDetails = () => {
           </p>
         </div>
       )}
-    </section>
+    </main>
   );
 };
 

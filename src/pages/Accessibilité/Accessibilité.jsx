@@ -2,10 +2,11 @@ import React from "react";
 
 const Accessibilite = () => {
   return (
-    <div className="container">
-      <h1>Accessibilité</h1>
-    </div>
-  )
-}
+    <main className="container">
+      <h1 className="m-5">Accessibilité</h1>
+      <p>A venir (en cours de production)</p>
+    </main>
+  );
+};
 
-export default Accessibilite
+export default Accessibilite;

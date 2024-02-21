@@ -8,10 +8,16 @@
 
   h2, h3 {
     font-weight: bold!important;
+    text-decoration: underline;
   }
 
   a{
     color : $light-color;
+    text-decoration: none;
+    &:hover {
+      color: $success-color;
+      text-decoration: underline;
+    }
   }
 
   .form-text-color {

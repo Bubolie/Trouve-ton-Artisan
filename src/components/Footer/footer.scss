@@ -1,18 +1,15 @@
 @import "../../assets/style.scss/colors.scss";
 
 footer {
-  background-color: $dark-color;
+  background-color: $secondary-color;
   color: $light-color;
   font-size: 12px;
 
   h4 {
     font-size: 16px;
-    color: $success-color;
     font-weight: bold;
-    border: 1px solid $light-color;
-    border-radius: 5px ;
-    background-color: black;
-    padding: 4px 10px;
+    border-bottom: 1px solid $light-color;
+    padding: 10px;
   }
 
   .link-footer {
