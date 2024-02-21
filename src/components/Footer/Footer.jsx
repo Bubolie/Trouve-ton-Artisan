@@ -7,7 +7,48 @@ const Footer = () => {
   return (
     <footer className="py-5">
       <div className="row">
-        
+        <section className="container col-md-6 d-flex flex-column align-items-center mb-4">
+          <h4 className="text-center">Pages Légales</h4>
+          <ul className="m-3">
+            <li>
+              <NavLink
+                to="/mentions-legales"
+                rel="noopener noreferrer"
+                className="link-footer"
+              >
+                Mentions Légales
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/donnees-personnelles"
+                rel="noopener noreferrer"
+                className="link-footer"
+              >
+                Données personnelles
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/cookies"
+                rel="noopener noreferrer"
+                className="link-footer"
+              >
+                Cookies
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/accessibilite"
+                rel="noopener noreferrer"
+                className="link-footer"
+              >
+                Accessibilités
+              </NavLink>
+            </li>
+          </ul>
+        </section>
         <section className="col-md-6 d-flex flex-column align-items-center">
           <h4 className="text-center">Nous contacter</h4>
           <address>

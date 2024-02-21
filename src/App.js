@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "../src/assets/style.scss/main.scss";
+import "../src/assets/style.scss/main.scss";
 
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
@@ -13,6 +14,7 @@ import Accessibilite from "./pages/Accessibilité/Accessibilité";
 import EntrepriseDetails from "./pages/EntrepriseDetails/EntrepriseDetails";
 import CategorySearch from "./pages/CategorySearch/CategorySearch";
 import ResultSearch from "./pages/ResultSearch/ResultSearch";
+
 
 function App() {
   return (
