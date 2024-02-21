@@ -1,10 +1,9 @@
 import { useParams } from "react-router-dom";
 import data from "../../data/datas.json";
 import { useEffect, useState } from "react";
-import Card from "../../components/Card/Card";
 import Button from "../../components/Button/Button";
-// import Home from "../Home/Home";
-// import "./filterResults.scss";
+import FilterSearch from "../../components/FilterSearch/FilterSearch";
+
 
 const ResultSearch = () => {
   const { filterTermSearch } = useParams();
@@ -22,46 +21,29 @@ const ResultSearch = () => {
     );
   });
 
-
-
   return (
-    <div className="container">
-      {filteredData.length > 0 ? (
-        <div className="container ">
-          <div className="d-flex justify-content-center ">
-            <h1 className="d-inline-flex title-style my-5 px-5 py-2 text-center">
-              Liste des artisans trouvés pour "{searchTerm}"
-            </h1>
-          </div>
-         
-          <article className="row">
-            {filteredData.map((artisan) => (
-              <Card
-                key={artisan.id}
-                artisan={artisan}
-                nameEntreprise={artisan.name}
-                note={artisan.note}
-                specialty={artisan.specialty}
-                location={artisan.location}
+    <main>
+      <FilterSearch
+        filter={filteredData}
+        title="Résultat(s) pour la recherche "
+        filterTerm={searchTerm}
+        ifFalse={
+          <div>
+            <p className="container text-center my-5">
+              Aucun résultat correspond à la recherche : "{searchTerm}"
+            </p>
+            <div className="text-end my-5">
+              <Button
+                linkPage="/"
+                type="button"
+                buttonName="Retourner à la page d'accueil"
+                color="blue"
               />
-            ))}
-          </article>
-        </div>
-      ) : (
-        <p className="container text-center my-5">
-          Aucun résultat ne correspond à "{searchTerm}"
-        </p>
-      )} 
-      <div className="text-end my-5">
-
-      <Button
-            linkPage="/"
-            type="button"
-            buttonName="Retourner à la page d'accueil"
-            color="blue"
-          />
+            </div>
           </div>
-    </div>
+        }
+      />
+    </main>
   );
 };
 
