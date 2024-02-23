@@ -1,27 +1,20 @@
-@font-face {
-  font-family: Graphik;
-  src: url("../font/Graphik-Regular-Trial.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+@mixin font-face($font-family, $font-file, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src: url("../font/#{$font-file}") format("opentype");
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+  }
 }
-@font-face {
-  font-family: Graphik;
-  src: url("../font/Graphik-Bold-Trial.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: Graphik;
-  src: url("../font/Graphik-RegularItalic-Trial.otf") format("opentype");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: Graphik;
-  src: url("../font/Graphik-BoldItalic-Trial.otf") format("opentype");
-  font-weight: bold;
-  font-style: italic;
-}
+@include font-face("Graphik", "Graphik-Regular-Trial.otf", normal, normal);
+@include font-face("Graphik", "Graphik-Bold-Trial.otf", bold, normal);
+@include font-face(
+  "Graphik",
+  "Graphik-RegularItalic-Trial.otf",
+  normal,
+  italic
+);
 
 @import "colors";
 
@@ -41,37 +34,42 @@ body {
   font-family: "Graphik", sans-serif;
   background-color: $light-color;
   color: $dark-color;
-  ol,
+}
+
+ol,
 ul {
   list-style: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
-  
-  .logo {
-    width: 32px;
-    height: 32px;
-    &-mini {
-      width: 24px;
-      height: 24px;
-    }
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  &-mini {
+    width: 24px;
+    height: 24px;
+  }
   &-custom {
     background-color: #82b864;
     margin-right: 10px;
   }
 }
-}
-}
-
-
-
-
-
-
 
 .title-style {
   border-radius: 15px;
   background-color: $success-color;
   font-weight: bold;
+}
+
+a {
+  color: $light-color;
+  text-decoration: none;
+  &:hover {
+    color: $success-color;
+    text-decoration: underline;
+  }
 }

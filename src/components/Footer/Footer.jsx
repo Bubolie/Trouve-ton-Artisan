@@ -1,54 +1,12 @@
-import { NavLink } from "react-router-dom";
 import location from "../../assets/images/location.svg";
 import phone from "../../assets/images/telephone.svg";
 import "./footer.scss";
+import LinkFooter from "./LinkFooter";
 
 const Footer = () => {
   return (
     <footer className="py-5">
       <div className="row">
-        <section className="container col-md-6 d-flex flex-column align-items-center mb-4">
-          <h4 className="text-center">Pages Légales</h4>
-          <ul className="m-3">
-            <li>
-              <NavLink
-                to="/mentions-legales"
-                rel="noopener noreferrer"
-                className="link-footer"
-              >
-                Mentions Légales
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink
-                to="/donnees-personnelles"
-                rel="noopener noreferrer"
-                className="link-footer"
-              >
-                Données personnelles
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/cookies"
-                rel="noopener noreferrer"
-                className="link-footer"
-              >
-                Cookies
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/accessibilite"
-                rel="noopener noreferrer"
-                className="link-footer"
-              >
-                Accessibilités
-              </NavLink>
-            </li>
-          </ul>
-        </section>
         <section className="col-md-6 d-flex flex-column align-items-center">
           <h4 className="text-center">Nous contacter</h4>
           <address>
@@ -63,7 +21,6 @@ const Footer = () => {
                 />
                 <p>+33 (0)4 26 73 40 00</p>
               </a>
-
               <a
                 href="https://maps.app.goo.gl/8UuoBFoPiLitMo628"
                 target="_blank"
@@ -91,43 +48,13 @@ const Footer = () => {
         <section className="container col-md-6 d-flex flex-column align-items-center">
           <h4 className="text-center">Pages Légales</h4>
           <ul className="my-3">
-            <li>
-              <NavLink
-                to="/mentions-legales"
-                rel="noopener noreferrer"
-                className="link-footer"
-              >
-                Mentions Légales
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink
-                to="/donnees-personnelles"
-                rel="noopener noreferrer"
-                className="link-footer"
-              >
-                Données personnelles
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/cookies"
-                rel="noopener noreferrer"
-                className="link-footer"
-              >
-                Cookies
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/accessibilite"
-                rel="noopener noreferrer"
-                className="link-footer"
-              >
-                Accessibilités
-              </NavLink>
-            </li>
+            <LinkFooter link="mentions-legales" nameLink="Mentions Légales" />
+            <LinkFooter
+              link="donnees-personnelles"
+              nameLink="Données personnelles"
+            />
+            <LinkFooter link="cookies" nameLink="Cookies" />
+            <LinkFooter link="accessibilite" nameLink="Accessibilités" />
           </ul>
         </section>
       </div>
