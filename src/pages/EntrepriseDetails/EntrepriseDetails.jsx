@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 
 import iconStar from "../../assets/images/star-512.svg";

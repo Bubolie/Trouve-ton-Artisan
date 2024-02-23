@@ -1,4 +1,3 @@
-import React from "react";
 import "./card.scss";
 import Button from "../Button/Button";
 import iconStar from "../../assets/images/star-512.svg";
@@ -6,15 +5,6 @@ import iconLocation from "../../assets/images/location.svg";
 import iconCategory from "../../assets/images/categories.svg";
 
 const Card = (props) => {
-  // const {nameEntreprise} = props
-  // const formattedName = nameEntreprise
-  //   ? nameEntreprise
-  //       .normalize("NFD")
-  //       .replace(/[\u0300-\u036f]/g, "")
-  //       .replace(/\s+/g, "-")
-  //       .toLowerCase()
-  //   : "";
-
   return (
     <div className=" col-md-6 col-lg-4 my-3 mx-auto">
       <article className="card shadow h-100 ">

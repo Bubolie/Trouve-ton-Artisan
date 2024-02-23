@@ -1,5 +1,3 @@
-import React from "react";
-
 const Donnees = () => {
   return (
     <main className="container">

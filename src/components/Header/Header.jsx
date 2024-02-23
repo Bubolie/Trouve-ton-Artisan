@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import logo from "../../assets/images/logo.svg";
 import "./header.scss";
 import LinkNavBar from "./LinkNavbar";
@@ -33,7 +33,6 @@ const Header = () => {
                 alt='Logo "Trouve ton Artisan"'
                 width="131"
                 height="72"
-                className="container-fluid"
               />
             </NavLink>
           </section>
@@ -53,9 +52,7 @@ const Header = () => {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div
-                className={`collapse navbar-collapse ${
-                  navbarOpen ? "show" : ""
-                }`}
+                className={`collapse navbar-collapse ${navbarOpen ? "show" : ""}`}
                 id="navbarToggler"
               >
                 <ul className="nav navbar-nav me-auto mb-2 mb-lg-0">

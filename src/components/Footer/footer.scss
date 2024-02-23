@@ -11,15 +11,4 @@ footer {
     border-bottom: 1px solid $light-color;
     padding: 10px;
   }
-
-  .link-footer {
-    text-decoration: none;
-    color: $light-color;
-
-    &:hover {
-      color: $success-color;
-
-      text-decoration: underline;
-    }
-  }
 }

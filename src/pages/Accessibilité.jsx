@@ -1,5 +1,3 @@
-import React from "react";
-
 const Accessibilite = () => {
   return (
     <main className="container">

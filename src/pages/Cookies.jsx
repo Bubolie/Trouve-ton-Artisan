@@ -1,5 +1,3 @@
-import React from "react";
-
 const Cookies = () => {
   return (
     <main className="container">

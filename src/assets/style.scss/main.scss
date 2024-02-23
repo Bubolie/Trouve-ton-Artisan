@@ -41,19 +41,15 @@ body {
   font-family: "Graphik", sans-serif;
   background-color: $light-color;
   color: $dark-color;
-}
-
-ol,
+  ol,
 ul {
   list-style: none;
 }
-
 img {
   max-width: 100%;
   height: auto;
-}
-
-.logo {
+  
+  .logo {
     width: 32px;
     height: 32px;
     &-mini {
@@ -65,6 +61,14 @@ img {
     margin-right: 10px;
   }
 }
+}
+}
+
+
+
+
+
+
 
 .title-style {
   border-radius: 15px;
