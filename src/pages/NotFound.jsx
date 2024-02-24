@@ -1,5 +1,5 @@
 import Button from "../components/Button/Button";
-import img404 from "../../assets/images/error-404.svg";
+import img404 from "../assets/images/error-404.svg";
 
 const NotFound = () => {
   return (

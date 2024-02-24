@@ -4,7 +4,7 @@ import "../src/assets/style.scss/main.scss";
 import "../src/assets/style.scss/main.scss";
 
 import Home from "./pages/Home/Home";
-import NotFound from "./pages/NotFound/NotFound";
+import NotFound from "./pages/NotFound";
 import Legal from "./pages/Legal";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -12,8 +12,8 @@ import Donnees from "./pages/Donnees";
 import Cookies from "./pages/Cookies";
 import Accessibilite from "./pages/Accessibilité";
 import EntrepriseDetails from "./pages/EntrepriseDetails/EntrepriseDetails";
-import CategorySearch from "./pages/CategorySearch/CategorySearch";
-import ResultSearch from "./pages/ResultSearch/ResultSearch";
+import CategorySearch from "./pages/CategorySearch";
+import ResultSearch from "./pages/ResultSearch";
 
 function App() {
   return (

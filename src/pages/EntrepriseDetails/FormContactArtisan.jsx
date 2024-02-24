@@ -1,7 +1,7 @@
 import Button from "../../components/Button/Button";
 
 const FormContactArtisan = (props) => {
-  // Pour forcer l'envoie par mail du formulaire
+  // Pour forcer l'ouverture messagerie et envoie par mail du formulaire
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -17,7 +17,9 @@ const FormContactArtisan = (props) => {
   };
 
   return (
-    <form action="" method="post" onSubmit={handleSubmit}>
+    <form action={`mailto:${props.email}`} method="post" 
+    onSubmit={handleSubmit}
+    >
       <div className="row m-3">
         <input
           className="px-2 my-2 rounded-4 form-text-color col-lg-6"

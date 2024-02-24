@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import data from "../data/datas.json";
-import NotFound from "./NotFound/NotFound";
+import NotFound from "./NotFound";
 import FilterSearch from "../components/FilterSearch";
 
 const CategorySearch = () => {

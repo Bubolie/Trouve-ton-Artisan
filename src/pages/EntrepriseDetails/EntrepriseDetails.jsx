@@ -8,7 +8,7 @@ import data from "../../data/datas.json";
 
 import "./entrepriseDetails.scss";
 import FormContactArtisan from "./FormContactArtisan";
-import NotFound from "../NotFound/NotFound";
+import NotFound from "../NotFound";
 
 const EntrepriseDetails = () => {
   const { artisanName } = useParams();
