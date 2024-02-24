@@ -1,9 +1,8 @@
 import { useParams } from "react-router-dom";
-import data from "../../data/datas.json";
+import data from "../data/datas.json";
 import { useEffect, useState } from "react";
-import Button from "../../components/Button/Button";
-import FilterSearch from "../../components/FilterSearch/FilterSearch";
-
+import Button from "../components/Button/Button";
+import FilterSearch from "../components/FilterSearch";
 
 const ResultSearch = () => {
   const { filterTermSearch } = useParams();

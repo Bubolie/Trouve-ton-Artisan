@@ -44,7 +44,7 @@ const FormContactArtisan = (props) => {
         ></textarea>
       </div>
       <div className="text-end my-3">
-        <Button type="submit" buttonName="Envoyer" />
+        <Button type="submit" buttonName="Envoyer" color="red" />
       </div>
     </form>
   );

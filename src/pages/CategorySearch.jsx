@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import data from "../../data/datas.json";
-import NotFound from "../NotFound/NotFound";
-import FilterSearch from "../../components/FilterSearch/FilterSearch";
+import data from "../data/datas.json";
+import NotFound from "./NotFound/NotFound";
+import FilterSearch from "../components/FilterSearch";
 
 const CategorySearch = () => {
   const { filterCategory } = useParams();
@@ -27,7 +27,7 @@ const CategorySearch = () => {
         filter={categories}
         title="Catégorie"
         filterTerm={category}
-        ifFalse={<NotFound/>}
+        ifFalse={<NotFound />}
       />
     </main>
   );

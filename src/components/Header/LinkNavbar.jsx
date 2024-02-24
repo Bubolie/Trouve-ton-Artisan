@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 const LinkNavBar = (props) => {
@@ -13,7 +12,7 @@ const LinkNavBar = (props) => {
     <li className="nav-item">
       <NavLink
         to={`categorie/${removeAccentsAndLowerCase(props.category)}`}
-        className="nav-link"
+        className="nav-link p-2"
         aria-current="page"
         aria-expanded="false"
         onClick={props.onClick}

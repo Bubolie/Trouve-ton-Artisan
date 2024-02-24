@@ -1,5 +1,5 @@
-import Card from "../../components/Card/Card";
-import Button from "../../components/Button/Button";
+import Card from "./Card/Card";
+import Button from "./Button/Button";
 
 const FilterSearch = (props) => {
   return (
@@ -10,7 +10,9 @@ const FilterSearch = (props) => {
             <h1 className="d-flex title-style mt-5 py-2 justify-content-center">
               {props.title} "{props.filterTerm}"
             </h1>
-            <h2 className="d-flex justify-content-center py-3"><u>Liste des Artisans répertoriés</u></h2>
+            <h2 className="d-flex justify-content-center py-3">
+              <u>Liste des Artisans répertoriés</u>
+            </h2>
           </div>
 
           <article className="row">

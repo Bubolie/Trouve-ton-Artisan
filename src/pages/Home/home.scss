@@ -1,18 +1,16 @@
 @import "../../assets/style.scss/colors.scss";
 
-main {
-  .bg-color-secondary {
-    background-color: $secondary-color;
-    color: $light-color;
-    margin: none;
-  }
+.bg-color-secondary {
+  background-color: $secondary-color;
+  color: $light-color;
+  margin: none;
+}
 
-  h2 {
-    color: $secondary-color;
-    background-color: $success-color;
-    font-weight: bold;
-    border: 4px solid $secondary-color;
-    border-radius: 15px;
-    padding: 0.5em 2em;
-  }
+.subtitle {
+  color: $secondary-color;
+  background-color: $success-color;
+  font-weight: bold;
+  border: 4px solid $secondary-color;
+  border-radius: 15px;
+  padding: 0.5em 2em;
 }

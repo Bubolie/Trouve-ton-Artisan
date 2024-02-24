@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../../components/Card/Card";
 import Stage from "../../components/Stage/Stage";
 import "./home.scss";
@@ -12,7 +11,9 @@ const Home = () => {
   return (
     <main>
       <section className="bg-color-secondary py-5">
-        <h1 className="text-center mb-5">Comment trouver mon artisan ?</h1>
+        <h1 className="container text-center mb-5">
+          Comment trouver mon artisan ?
+        </h1>
         <div className="container">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <Stage
@@ -33,7 +34,7 @@ const Home = () => {
       </section>
       <section className="container my-5 ">
         <div className="d-flex justify-content-center">
-          <h2>Nos artisans du mois</h2>
+          <h2 className="text-center subtitle">Nos artisans du mois</h2>
         </div>
         <div className="row">
           {sortTopArtisans.map((entreprise) => (
