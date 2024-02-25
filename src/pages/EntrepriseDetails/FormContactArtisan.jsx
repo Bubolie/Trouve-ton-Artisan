@@ -1,23 +1,16 @@
 import Button from "../../components/Button/Button";
 
 const FormContactArtisan = (props) => {
-  // Pour forcer l'ouverture messagerie et envoie par mail du formulaire
+
   const handleSubmit = (e) => {
+    alert("Votre message a bien été envoyé à l'artisan " + props.name + ".")
     e.preventDefault();
     const form = e.target;
-    const formData = new FormData(form);
-    const name = formData.get("name");
-    const body = `${formData.get("message")}\n\nNom: ${name}`;
-    const mailtoURL = `mailto:${props.email}?subject=${formData.get(
-      "objet"
-    )}&body=${encodeURIComponent(body)}`;
-
-    window.open(mailtoURL);
     form.reset();
   };
 
   return (
-    <form action={`mailto:${props.email}`} method="post" 
+    <form action="" method="post" 
     onSubmit={handleSubmit}
     >
       <div className="row m-3">

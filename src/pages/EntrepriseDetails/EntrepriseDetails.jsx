@@ -44,7 +44,7 @@ const EntrepriseDetails = () => {
           <p className="container">{entreprise.about}</p>
           <h2 className="mt-5 mb-4 ">Nous contacter</h2>
 
-          <FormContactArtisan email={entreprise.email} />
+          <FormContactArtisan name={entreprise.name} />
 
           {entreprise.website ? (
             <p>
