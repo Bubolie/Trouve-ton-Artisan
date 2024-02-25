@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import data from "../data/datas.json";
 import NotFound from "./NotFound";
 import FilterSearch from "../components/FilterSearch";
+import Meta from "../components/Meta";
 
 const CategorySearch = () => {
   const { filterCategory } = useParams();
@@ -22,7 +23,11 @@ const CategorySearch = () => {
   const category = categories.length > 0 ? categories[0].category : "";
 
   return (
-    <main>
+    <>
+    <Meta title={`Catégorie ${category}`} 
+    content={`Cette page contient toutes les entreprises répertoriées sur notre site appartenant à la catégorie ${category}`}
+    />
+        <main>
       <FilterSearch
         filter={categories}
         title="Catégorie"
@@ -30,6 +35,8 @@ const CategorySearch = () => {
         ifFalse={<NotFound />}
       />
     </main>
+    </>
+
   );
 };
 export default CategorySearch;
