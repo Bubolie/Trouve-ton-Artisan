@@ -59,10 +59,13 @@ img {
   }
 }
 
-.title-style {
-  border-radius: 15px;
-  background-color: $success-color;
+h1 {
   font-weight: bold;
+
+  &.title-style {
+    border-radius: 15px;
+    background-color: $success-color;
+  }
 }
 
 a {
