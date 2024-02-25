@@ -2,12 +2,41 @@ import location from "../../assets/images/location.svg";
 import phone from "../../assets/images/telephone.svg";
 import "./footer.scss";
 import LinkFooter from "./LinkFooter";
+import logoRegion from "../../assets/images/logo-region.svg";
+import logoSite from "../../assets/images/logo.svg";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="py-5">
-      <div className="row">
-        <section className="col-md-6 d-flex flex-column align-items-center">
+      <div className="container">
+        <div className="container-fluid row d-flex">
+        <section className="container col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <NavLink to="/">
+            <img
+              src={logoSite}
+              alt='Logo de notre site "Trouve ton artisan"'
+              className="bg-light rounded p-1 m-3"
+              width="131"
+              height="72"
+            />
+          </NavLink>
+          <p className="text-center px-4"><i>En partenariat avec l'antenne lyonnaise du Conseil Régional Auvergne-Rhône-Alpes</i></p>
+          <a
+            href="https://www.auvergnerhonealpes.fr/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={logoRegion}
+              alt="Logo du Conseil Régional Auvergne-Rhône-Alpes"
+              className="bg-light rounded p-1 m-3"
+              width="225"
+              height="70"
+            />
+          </a>
+        </section>
+        <section className="col-md-6 d-flex flex-column align-items-center justify-content-center">
           <h4 className="text-center">Nous contacter</h4>
           <address>
             <div className="m-4">
@@ -45,19 +74,21 @@ const Footer = () => {
             </div>
           </address>
         </section>
-        <section className="container col-md-6 d-flex flex-column align-items-center">
-          <h4 className="text-center">Pages Légales</h4>
-          <ul className="my-3">
-            <LinkFooter link="mentions-legales" nameLink="Mentions Légales" />
-            <LinkFooter
-              link="donnees-personnelles"
-              nameLink="Données personnelles"
-            />
-            <LinkFooter link="cookies" nameLink="Cookies" />
-            <LinkFooter link="accessibilite" nameLink="Accessibilités" />
-          </ul>
-        </section>
       </div>
+      <section className="container">
+        <h4 className="text-center">Pages Légales</h4>
+        <ul className="my-3 d-flex justify-content-center flex-wrap">
+          <LinkFooter link="mentions-legales" nameLink="Mentions Légales" />
+          <LinkFooter
+            link="donnees-personnelles"
+            nameLink="Données personnelles"
+          />
+          <LinkFooter link="cookies" nameLink="Cookies" />
+          <LinkFooter link="accessibilite" nameLink="Accessibilités" />
+        </ul>
+      </section>
+      </div>
+      
     </footer>
   );
 };

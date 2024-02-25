@@ -11,13 +11,14 @@ const Home = () => {
 
   return (
     <>
-    <Meta title="Trouve ton Artisan" content="Site web de la Région Auvergne-Rhône-Alpes permettant de rechercher et trouver facilement un artisan de la Région"/>
+      <Meta
+        title="Trouve ton Artisan"
+        content="Site web de la Région Auvergne-Rhône-Alpes permettant de rechercher et trouver facilement un artisan de la Région"
+      />
       <main>
         <section className="bg-color-secondary py-5">
-          <h1 className="container text-center mb-5">
-            Comment trouver mon artisan ?
-          </h1>
           <div className="container">
+            <h1 className="container text-center mb-5">Comment trouver mon artisan ?</h1>
             <div className="d-flex flex-column justify-content-center align-items-center">
               <Stage
                 number="1"

@@ -6,7 +6,7 @@ const LinkFooter = (props) => {
       <NavLink
         to={`/${props.link}`}
         rel="noopener noreferrer"
-        className="link-footer"
+        className="link-footer mx-3"
       >
         {props.nameLink}
       </NavLink>
