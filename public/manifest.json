@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Trouve ton Artisan",
+  "short_name": "Artisan",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,8 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#0074C7",
-  "background_color": "#f1f8fc"
+  "background_color": "#f1f8fc",
+  "lang": "fr",
+  "description": "Trouvez facilement des artisans qualifiés en Région Auvergne-Rhône-Alpes.",
+  "scope": "/"
 }
