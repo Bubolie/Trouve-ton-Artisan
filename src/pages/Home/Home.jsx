@@ -18,21 +18,23 @@ const Home = () => {
       <main>
         <section className="bg-color-secondary py-5">
           <div className="container">
-            <h1 className="container text-center mb-5">Comment trouver mon artisan ?</h1>
-            <div className="d-flex flex-column justify-content-center align-items-center">
-              <Stage
-                number="1"
-                description="Choisir la catégorie d'artisanat dans le menu."
-              />
-              <Stage number="2" description="Choisir un artisan." />
-              <Stage
-                number="3"
-                description="Le contacter via le formulaire de contact."
-              />
-              <Stage
-                number="4"
-                description="Une réponse sera apportée sous 48h."
-              />
+            <h1 className="text-center mb-5">Comment trouver mon artisan ?</h1>
+            <div className="d-flex justify-content-center align-items-center">
+              <div className="d-flex flex-column align-items-center">
+                <Stage
+                  number="1"
+                  description="Choisir la catégorie d'artisanat dans le menu."
+                />
+                <Stage number="2" description="Choisir un artisan." />
+                <Stage
+                  number="3"
+                  description="Le contacter via le formulaire de contact."
+                />
+                <Stage
+                  number="4"
+                  description="Une réponse sera apportée sous 48h."
+                />
+              </div>
             </div>
           </div>
         </section>

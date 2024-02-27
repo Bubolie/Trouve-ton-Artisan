@@ -24,19 +24,19 @@ const CategorySearch = () => {
 
   return (
     <>
-    <Meta title={`Catégorie ${category}`} 
-    content={`Cette page contient toutes les entreprises répertoriées sur notre site appartenant à la catégorie ${category}`}
-    />
-        <main>
-      <FilterSearch
-        filter={categories}
-        title="Catégorie"
-        filterTerm={category}
-        ifFalse={<NotFound />}
+      <Meta
+        title={`Catégorie ${category}`}
+        content={`Cette page contient toutes les entreprises répertoriées sur notre site appartenant à la catégorie ${category}`}
       />
-    </main>
+      <main>
+        <FilterSearch
+          filter={categories}
+          title="Catégorie"
+          filterTerm={category}
+          ifFalse={<NotFound />}
+        />
+      </main>
     </>
-
   );
 };
 export default CategorySearch;

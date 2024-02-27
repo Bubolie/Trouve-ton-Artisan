@@ -42,8 +42,8 @@ const Footer = () => {
               />
             </a>
           </section>
-          <section className="col-md-6 d-flex flex-column align-items-center justify-content-center">
-            <h4 className="text-center">Nous contacter</h4>
+          <section className="col-md-6 d-flex flex-column align-items-center justify-content-center mt-3">
+            <h4 className="container text-center">Nous contacter</h4>
             <address>
               <div className="m-4">
                 <a
@@ -53,7 +53,7 @@ const Footer = () => {
                 >
                   <img
                     src={phone}
-                    alt="icone d'un téléphone"
+                    alt="Icône d'un téléphone"
                     className="logo-mini logo-custom img-thumbnail"
                     width="512"
                     height="512"
@@ -69,7 +69,7 @@ const Footer = () => {
                 >
                   <img
                     src={location}
-                    alt="icone de localisation"
+                    alt="Icône de localisation"
                     className="logo-mini logo-custom img-thumbnail"
                     width="512"
                     height="512"
@@ -95,7 +95,7 @@ const Footer = () => {
               nameLink="Données personnelles"
             />
             <LinkFooter link="cookies" nameLink="Cookies" />
-            <LinkFooter link="accessibilite" nameLink="Accessibilités" />
+            <LinkFooter link="accessibilite" nameLink="Accessibilité" />
           </ul>
         </section>
       </div>

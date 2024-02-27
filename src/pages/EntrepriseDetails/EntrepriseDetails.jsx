@@ -28,7 +28,7 @@ const EntrepriseDetails = () => {
     <>
       <Meta
         title={entreprise.name}
-        content={`Fiche descriptive de l'entreprise ${entreprise.name}et formulaire de contact`}
+        content={`Fiche descriptive de l'entreprise ${entreprise.name} et formulaire de contact`}
       />
       <main className="container my-5">
         <div className="container bg-container">

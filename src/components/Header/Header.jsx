@@ -26,14 +26,13 @@ const Header = () => {
     <header className="header-shadow">
       <div className="container">
         <nav className="navbar navbar-expand-lg d-flex justify-content-between">
-          <section className="ms-2">
+          <section>
             <NavLink className="navbar-brand" to="/" aria-label="Page d'accueil de Trouve ton Artisan">
               <img
                 src={logo}
                 alt='Logo "Trouve ton Artisan"'
                 width="131"
                 height="72"
-                
               />
             </NavLink>
           </section>

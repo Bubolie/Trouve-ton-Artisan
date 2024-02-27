@@ -16,7 +16,7 @@ const NotFound = () => {
           <p>La page que vous recherchez n'exite pas.</p>
           <img
             src={img404}
-            alt='logo ordinateur affichant "404"'
+            alt='Logo ordinateur affichant "404"'
             width="512"
             height="512"
           />

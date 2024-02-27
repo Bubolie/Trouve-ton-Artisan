@@ -1,13 +1,12 @@
 import Card from "./Card/Card";
-import Button from "./Button/Button";
 
 const FilterSearch = (props) => {
   return (
-    <div className="container">
+    <div className="container mb-5">
       {props.filter.length > 0 ? (
-        <div className="container ">
-          <div className="d-flex flex-column justify-content-center ">
-            <h1 className="d-flex title-style mt-5 py-2 justify-content-center">
+        <div className="container">
+          <div className="d-flex flex-column justify-content-center text-center">
+            <h1 className="d-flex title-style mt-5 py-2 justify-content-center ">
               {props.title} "{props.filterTerm}"
             </h1>
             <h2 className="d-flex justify-content-center py-3">
@@ -27,14 +26,6 @@ const FilterSearch = (props) => {
               />
             ))}
           </article>
-          <div className="text-end my-5">
-            <Button
-              linkPage="/"
-              type="button"
-              buttonName="Retourner à la page d'accueil"
-              color="blue"
-            />
-          </div>
         </div>
       ) : (
         props.ifFalse
