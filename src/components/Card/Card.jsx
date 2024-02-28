@@ -1,6 +1,5 @@
 import "./card.scss";
 import Button from "../Button/Button";
-// import iconStar from "../../assets/images/star-512.svg";
 import { NavLink } from "react-router-dom";
 import ArtisanDetailsCommon from "../ArtisanDetailsCommon";
 

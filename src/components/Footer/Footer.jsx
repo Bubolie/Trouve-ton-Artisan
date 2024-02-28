@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="py-5">
       <div className="container">
-        <div className="container-fluid row d-flex">
+        <div className="row">
           <section className="container col-md-6 d-flex flex-column align-items-center justify-content-center">
             <NavLink to="/" aria-label="Page d'accueil de Trouve ton Artisan">
               <img
@@ -23,7 +23,7 @@ const Footer = () => {
             </NavLink>
             <p className="text-center px-4">
               <i>
-                En partenariat avec l'antenne lyonnaise du Conseil Régional
+                En partenariat avec l'Antenne Lyonnaise du Conseil Régional
                 Auvergne-Rhône-Alpes
               </i>
             </p>
@@ -43,12 +43,12 @@ const Footer = () => {
             </a>
           </section>
           <section className="col-md-6 d-flex flex-column align-items-center justify-content-center mt-3">
-            <h4 className="container text-center">Nous contacter</h4>
+            <h4 className="container text-center px-5">Nous contacter</h4>
             <address>
               <div className="m-4">
                 <a
                   href="tel:+33(0)426734000"
-                  className="link-footer d-flex"
+                  className="d-flex"
                   aria-label="Appeler Trouve ton Artisan"
                 >
                   <img
@@ -64,7 +64,7 @@ const Footer = () => {
                   href="https://maps.app.goo.gl/8UuoBFoPiLitMo628"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="link-footer d-flex"
+                  className="d-flex"
                   aria-label="Voir la localisation sur Google Maps"
                 >
                   <img
