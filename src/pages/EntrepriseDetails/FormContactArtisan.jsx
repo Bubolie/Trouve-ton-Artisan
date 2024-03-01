@@ -7,10 +7,9 @@ const FormContactArtisan = (props) => {
     const form = e.target;
     form.reset();
   };
-  const supportEmail = process.env.REACT_APP_EMAIL_SUPPORT;
 
   return (
-    <form action={`mailto:${supportEmail}`} method="post" onSubmit={handleSubmit}>
+    <form action="" method="post" onSubmit={handleSubmit}>
       <div className="row m-3">
         <div className="col-lg-6 p-0 pe-lg-3">
           <input
