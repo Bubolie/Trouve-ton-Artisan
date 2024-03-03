@@ -3,6 +3,7 @@ import data from "../data/datas.json";
 import { useEffect, useState } from "react";
 import Button from "../components/Button/Button";
 import FilterSearch from "../components/FilterSearch";
+import Meta from "../components/Meta";
 
 const ResultSearch = () => {
   const { filterTermSearch } = useParams();
@@ -21,28 +22,35 @@ const ResultSearch = () => {
   });
 
   return (
-    <main>
-      <FilterSearch
-        filter={filteredData}
-        title="Résultat(s) pour la recherche "
-        filterTerm={searchTerm}
-        ifFalse={
-          <div>
-            <p className="container text-center my-5">
-              Aucun résultat correspond à la recherche : "{searchTerm}"
-            </p>
-            <div className="text-end my-5">
-              <Button
-                linkPage="/"
-                type="button"
-                buttonName="Retourner à la page d'accueil"
-                color="blue"
-              />
-            </div>
-          </div>
-        }
+    <>
+      <Meta
+        title="Résultats de recherche"
+        content={`Cette page affiche les résultats de votre recherche "${searchTerm}"`}
       />
-    </main>
+
+      <main>
+        <FilterSearch
+          filter={filteredData}
+          title="Résultat(s) pour la recherche "
+          filterTerm={searchTerm}
+          ifFalse={
+            <div>
+              <p className="container text-center my-5">
+                Aucun résultat correspond à la recherche : "{searchTerm}"
+              </p>
+              <div className="text-end my-5">
+                <Button
+                  linkPage="/"
+                  type="button"
+                  buttonName="Retourner à la page d'accueil"
+                  color="blue"
+                />
+              </div>
+            </div>
+          }
+        />
+      </main>
+    </>
   );
 };
 

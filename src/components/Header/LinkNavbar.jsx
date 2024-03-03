@@ -15,6 +15,7 @@ const LinkNavBar = (props) => {
         className="nav-link p-2"
         aria-current="page"
         aria-expanded="false"
+        aria-label={`Onglet ${props.category}`}
         onClick={props.onClick}
       >
         {props.category}

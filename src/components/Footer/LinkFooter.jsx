@@ -6,7 +6,8 @@ const LinkFooter = (props) => {
       <NavLink
         to={`/${props.link}`}
         rel="noopener noreferrer"
-        className="link-footer"
+        className="mx-3"
+        aria-label={`Lien vers la page ${props.link}`}
       >
         {props.nameLink}
       </NavLink>
